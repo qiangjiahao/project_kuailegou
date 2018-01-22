@@ -1,0 +1,171 @@
+@charset "UTF-8";
+/* CSS Document */
+body, div, p, ul, ol, li, dl, dt, dd, table, tr, td, form, hr, h1, h2, h3, h4, h5, h6, img, input {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "微软雅黑",Arial;
+  font-size: 12px; }
+
+a {
+  text-decoration: none; }
+
+ul, ol {
+  list-style: none; }
+
+img, input {
+  border: 0; }
+
+.header {
+  width: 100%;
+  background-color: #fff; }
+  .header .h_z {
+    width: 1000px;
+    height: 68px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 19px; }
+    .header .h_z .h_z_left {
+      float: left;
+      width: 74px;
+      margin-right: 7px; }
+      .header .h_z .h_z_left a {
+        height: 68px; }
+        .header .h_z .h_z_left a img {
+          width: 72px;
+          height: 68px; }
+    .header .h_z .h_z_rigth {
+      float: right;
+      margin-top: 19px; }
+
+.mainbody {
+  width: 980px;
+  height: 600px;
+  margin: 0 auto; }
+  .mainbody .m_b_z .m_b_z_l {
+    float: left;
+    width: 600px;
+    text-align: center;
+    padding-top: 50px; }
+    .mainbody .m_b_z .m_b_z_l img {
+      width: 560px;
+      height: 360px; }
+  .mainbody .m_b_z .m_b_z_r {
+    float: left;
+    width: 367px;
+    height: 600px;
+    background: url(../imgs/login_icon_list.png) 0 -115px no-repeat; }
+    .mainbody .m_b_z .m_b_z_r .login {
+      padding: 0 33px; }
+      .mainbody .m_b_z .m_b_z_r .login .l_title {
+        height: 38px;
+        padding-top: 23px;
+        padding-bottom: 26px; }
+        .mainbody .m_b_z .m_b_z_r .login .l_title h2 {
+          color: #c41f3a;
+          font-size: 22px;
+          height: 38px;
+          line-height: 38px;
+          font-weight: bold;
+          float: left; }
+        .mainbody .m_b_z .m_b_z_r .login .l_title div {
+          float: right;
+          height: 38px;
+          line-height: 38px;
+          text-align: right;
+          color: #8c8c8c; }
+          .mainbody .m_b_z .m_b_z_r .login .l_title div a {
+            color: #c41f3a; }
+      .mainbody .m_b_z .m_b_z_r .login .l_nr {
+        width: 301px;
+        height: 435px; }
+        .mainbody .m_b_z .m_b_z_r .login .l_nr form div {
+          margin-bottom: 10px;
+          position: relative; }
+        .mainbody .m_b_z .m_b_z_r .login .l_nr form .f_div1 input {
+          color: #333333;
+          border: 1px solid #c8c8c8;
+          height: 25px;
+          line-height: 25px;
+          padding-left: 6px;
+          width: 293px;
+          padding: 7px 0 7px 6px; }
+        .mainbody .m_b_z .m_b_z_r .login .l_nr form .f_div1 div {
+          height: 23px;
+          line-height: 23px;
+          margin-bottom: 3px; }
+          .mainbody .m_b_z .m_b_z_r .login .l_nr form .f_div1 div div {
+            color: #8c8c8c; }
+        .mainbody .m_b_z .m_b_z_r .login .l_nr form .f_div2 input {
+          color: #333333;
+          border: 1px solid #c8c8c8;
+          height: 25px;
+          line-height: 25px;
+          padding-left: 6px;
+          width: 157px;
+          padding: 7px 0 7px 6px; }
+        .mainbody .m_b_z .m_b_z_r .login .l_nr form .f_div2 a {
+          margin-left: 11px;
+          color: #444444;
+          font-family: "宋体";
+          font-weight: bold;
+          text-align: center;
+          outline: 0;
+          display: inline-block;
+          background-color: #f6f6f6;
+          border: 1px solid #c8c8c8;
+          width: 117px;
+          height: 38px;
+          line-height: 38px;
+          vertical-align: top; }
+          .mainbody .m_b_z .m_b_z_r .login .l_nr form .f_div2 a div {
+            height: 38px;
+            line-height: 38px;
+            margin-bottom: 0px; }
+        .mainbody .m_b_z .m_b_z_r .login .l_nr form .f_div2 div {
+          height: 23px;
+          line-height: 23px;
+          margin-bottom: 3px; }
+          .mainbody .m_b_z .m_b_z_r .login .l_nr form .f_div2 div div {
+            color: #c4203b;
+            padding: 0;
+            position: relative;
+            height: 23px;
+            line-height: 23px;
+            text-align: left;
+            width: 275px; }
+            .mainbody .m_b_z .m_b_z_r .login .l_nr form .f_div2 div div span {
+              background: url(../imgs/login_icon_list.png) no-repeat 0 0;
+              width: 18px;
+              height: 18px;
+              display: inline-block;
+              vertical-align: middle; }
+        .mainbody .m_b_z .m_b_z_r .login .l_nr form .f_div3 {
+          color: #333333;
+          border: 1px solid #c8c8c8;
+          height: 25px;
+          line-height: 25px;
+          padding-left: 6px;
+          width: 157px;
+          padding: 7px 0 7px 6px; }
+        .mainbody .m_b_z .m_b_z_r .login .l_nr form .f_div4 .f_d_a {
+          display: block;
+          width: 310px;
+          height: 40px;
+          color: #fff;
+          line-height: 40px;
+          background-color: #94193f;
+          text-align: center;
+          font-size: 14px;
+          font-family: "宋体";
+          font-weight: bold; }
+        .mainbody .m_b_z .m_b_z_r .login .l_nr form .f_div4 div {
+          padding-top: 5px; }
+          .mainbody .m_b_z .m_b_z_r .login .l_nr form .f_div4 div input {
+            vertical-align: middle; }
+          .mainbody .m_b_z .m_b_z_r .login .l_nr form .f_div4 div label {
+            color: #767676;
+            padding-left: 6px; }
+            .mainbody .m_b_z .m_b_z_r .login .l_nr form .f_div4 div label a {
+              color: #c41f3a; }

@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>快乐购 - 值得信赖的电视购物平台,视频导购,货到付款,正品行货 -美容护肤、数码、家电、服装、家居、运动休闲</title>
 	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="css/footer_bottom_public.css"/>
 </head>
 <body>
 	<!--顶部-->
@@ -13,17 +14,21 @@
 			<div class="header_topz">
 				<div class="h_t_left">
 					<a href="#" class="h_t_l_hy">欢迎来到快乐购！</a>
-					<a href="#" class="h_t_l_dl">[登录]</a>
+					<a href="#" class="h_t_l_dl">[登&nbsp;录]</a>
 					<span class="h_t_right_sx"></span>
-					<a href="#" class="h_t_l_zc">[注册]</a>
-					<div class="h_t_l_zc_nr">
+					<a href="#" class="h_t_l_zc">[注&nbsp;册]</a>
+					<div class="h_t_l_zc_nr" id="shopBag">
 						<p>注册既得新人专享288元购物红包</p>
-						<div class="h_t_l_zc_nr_cha"></div>
+						<div class="h_t_l_zc_nr_cha" id="shopBags"></div>
 					</div>
 				</div>
 				<div class="h_t_right">
-					<a href="#">合作招商<span class="xsj1"></span></a>
+					<a href="#" class="rightA" id="rightA1">合作招商<span class="xsj1"></span></a>
 					<span class="h_t_right_sx"></span>
+					<div style="display: none;" id="h_t_r_div1" class="rightA">
+						<a href="#">平台招商</a>
+						<a href="#">自主品牌招商</a>
+					</div>
 					<a href="#">订单查询</a>
 					<span class="h_t_right_sx"></span>
 					<a href="#">我的快乐购</a>
@@ -32,7 +37,11 @@
 					<span class="h_t_right_sx"></span>
 					<a href="#">下载快乐购app</a>
 					<span class="h_t_right_sx"></span>
-					<a href="#">客服中心<span class="xsj2"></span></a>
+					<a href="#" class="rightA2" id="rightA21">客服中心<span class="xsj2"></span></a>
+					<div style="display: none;" id="h_t_r_div2" class="rightA2">
+						<a href="#">帮助中心</a>
+						<a href="#">会员反馈</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -85,11 +94,11 @@
 			<div class="header_bottomz">
 				<ul>
 					<li>
-						<a href="#">全部分类
+						<a href="#" class="z_a1">全部分类
 							<span class="h_b_span1"></span>
 						</a>
 					</li>
-					<li><a href="#">首页</a></li>
+					<li><a href="#" class="z_a2">首页</a></li>
 					<li>
 						<a href="#">TV直播</a>
 						<div class="h_b_d">
@@ -126,95 +135,325 @@
 		</div>
 		<div class="slideshow_menu">
 			<ul class="s_l_ul">
-				<li>
+				<li class="slideshow_01">
 					<a href="#"><span class="s_l_ul_s1"></span>&nbsp;食品健康</a>
-					<div>
-						<ul>
-							<li>
-								<a>
-									粮油调味
-									<span>></span>
-								</a>
-							</li>
-							<li>
-								<a>
-									营养保健
-									<span>></span>
-								</a>
-							</li>
-							<li>
-								<a>
-									酒水茗茶
-									<span>></span>
-								</a>
-							</li>
-							<li>
-								<a>
-									饮料冲调
-									<span>></span>
-								</a>
-							</li>
-							<li>
-								<a>
-									休闲食品
-									<span>></span>
-								</a>
-							</li><li>
-								<a>
-									生鲜食品
-									<span>></span>
-								</a>
-							</li>
-						</ul>
-					</div>
+				</li>
+				<li class="slideshow_02">
+					<a href="#"><span class="s_l_ul_s2"></span>&nbsp;个护美妆</a>
+				</li>
+				<li class="slideshow_03">
+					<a href="#"><span class="s_l_ul_s3"></span>&nbsp;餐厨日用</a>
+				</li>
+				<li class="slideshow_04">
+					<a href="#"><span class="s_l_ul_s4"></span>&nbsp;服装配饰</a>
+				</li>
+				<li class="slideshow_05">
+					<a href="#"><span class="s_l_ul_s5"></span>&nbsp;布艺家纺</a>
+				</li>
+				<li class="slideshow_06">
+					<a href="#"><span class="s_l_ul_s6"></span>&nbsp;家电数码</a>
+				</li>
+				<li class="slideshow_07">
+					<a href="#"><span class="s_l_ul_s7"></span>&nbsp;母婴呵护</a>
+				</li>
+			</ul>
+		</div>
+		<!--食品健康-->
+		<div class="slideshow_menu_nr slideshow_01" id="s_m_n_div1" style="display: none;">
+			<ul>
+				<li>
+					<a>
+						粮油调味
+						<span>></span>
+					</a>
 				</li>
 				<li>
-					<a href="#"><span class="s_l_ul_s2"></span>&nbsp;个护美妆</a>
-					<div class="">
-						<ul>
-							<li>
-								<a>
-									粮油调味
-									<span>></span>
-								</a>
-							</li>
-							<li>
-								<a>
-									营养保健
-									<span>></span>
-								</a>
-							</li>
-							<li>
-								<a>
-									酒水茗茶
-									<span>></span>
-								</a>
-							</li>
-							<li>
-								<a>
-									饮料冲调
-									<span>></span>
-								</a>
-							</li>
-							<li>
-								<a>
-									休闲食品
-									<span>></span>
-								</a>
-							</li><li>
-								<a>
-									生鲜食品
-									<span>></span>
-								</a>
-							</li>
-						</ul>
-					</div>
+					<a>
+						营养保健
+						<span>></span>
+					</a>
 				</li>
-				<li><a href="#"><span class="s_l_ul_s3"></span>&nbsp;餐厨日用</a></li>
-				<li><a href="#"><span class="s_l_ul_s4"></span>&nbsp;服装配饰</a></li>
-				<li><a href="#"><span class="s_l_ul_s5"></span>&nbsp;布艺家纺</a></li>
-				<li><a href="#"><span class="s_l_ul_s6"></span>&nbsp;家电数码</a></li>
-				<li><a href="#"><span class="s_l_ul_s7"></span>&nbsp;母婴呵护</a></li>
+				<li>
+					<a>
+						酒水茗茶
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						饮料冲调
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						休闲食品
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						生鲜食品
+						<span>></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--个护美妆-->	
+		<div class="slideshow_menu_nr slideshow_02" id="s_m_n_div2" style="display: none;">
+			<ul>
+				<li>
+					<a>
+						面部护理
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						香水彩妆
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						美发护发
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						身体护理
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						美容工具
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						口腔护理
+						<span>></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--餐厨日用-->
+		<div class="slideshow_menu_nr slideshow_03" id="s_m_n_div3" style="display: none;">
+			<ul>
+				<li>
+					<a>
+						烹饪锅具
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						厨房电器
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						厨房用具
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						餐饮用具
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						厨房配件
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						生活用品
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						健康保健
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						清洁收纳
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						家装建材
+						<span>></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--服装配饰-->
+		<div class="slideshow_menu_nr slideshow_04" id="s_m_n_div4" style="display: none;">
+			<ul>
+				<li>
+					<a>
+						女士服装
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						男士服装
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						内衣
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						鞋靴
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						箱包
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						眼镜配饰
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						运动/户外
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						钟表
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						珠宝藏品
+						<span>></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--布艺家纺-->
+		<div class="slideshow_menu_nr slideshow_05" id="s_m_n_div5" style="display: none;">
+			<ul>
+				<li>
+					<a>
+						床品套件
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						布艺软饰
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						抱枕靠垫
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						毛巾浴巾
+						<span>></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--家电数码-->
+		<div class="slideshow_menu_nr slideshow_06" id="s_m_n_div6" style="display: none;">
+			<ul>
+				<li>
+					<a>
+						生活家电
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						大家电
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						手机通讯
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						电脑影音
+						<span>></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--母婴呵护-->
+		<div class="slideshow_menu_nr slideshow_07" id="s_m_n_div7" style="display: none;">
+			<ul>
+				<li>
+					<a>
+						婴幼护理
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						婴幼食品
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						孕童服饰
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						早教玩具
+						<span>></span>
+					</a>
+				</li>
+				<li>
+					<a>
+						休闲食品
+						<span>></span>
+					</a>
+				</li><li>
+					<a>
+						生鲜食品
+						<span>></span>
+					</a>
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -566,7 +805,7 @@
 		</div>
 		<!--今日直播 昨日疯抢 END-->
 		<!--限时抢购-->
-		<div class="xs">
+		<div class="xs" id="xs">
 			<div class="title2">
 				<p class="title2_p">限时抢购</p>
 				<ul class="title2_uls">
@@ -925,7 +1164,7 @@
 		</div>
 		<!--限时抢购 END-->
 		<!--新品推荐-->
-		<div class="xptj">
+		<div class="xptj" id="xptj">
 			<div class="title3">
 				<div class="title3Nr">
 					<p>新品推荐</p>
@@ -1023,7 +1262,7 @@
 			</ul>
 		</div>
 		<!--精选活动-->
-		<div class="jxhd">
+		<div class="jxhd" id="jxhd">
 			<div class="title4">
 				<div class="title4Nr">
 					<p>精选活动</p>
@@ -1070,7 +1309,7 @@
 			</div>
 		</div>
 		<!--食品健康-->	
-		<div class="spjk">
+		<div class="spjk" id="spjk">
 			<div class="title5">
 				<p class="title5_p">食品健康</p>
 				<ul class="title5_uls">
@@ -1292,7 +1531,7 @@
 			</div>		
 		</div>
 		<!--个护美妆-->
-		<div class="spjk">
+		<div class="spjk jk1" id="ghmz">
 			<div class="title5">
 				<p class="title5_p">个护美妆</p>
 				<ul class="title5_uls">
@@ -1513,8 +1752,8 @@
 				</ul>
 			</div>		
 		</div>
-		<!--日用餐厨-->
-		<div class="spjk">
+		<!--餐厨日用-->
+		<div class="spjk jk2" id="ccry">
 			<div class="title5">
 				<p class="title5_p">餐厨日用</p>
 				<ul class="title5_uls">
@@ -1748,7 +1987,7 @@
 			</div>		
 		</div>
 		<!--服装配饰-->
-		<div class="spjk">
+		<div class="spjk jk3" id="fzps">
 			<div class="title5">
 				<p class="title5_p">服装配饰</p>
 				<ul class="title5_uls">
@@ -1982,7 +2221,7 @@
 			</div>		
 		</div>
 		<!--布艺家纺-->
-		<div class="spjk">
+		<div class="spjk jk4" id="byjf">
 			<div class="title5">
 				<p class="title5_p">布艺家纺</p>
 				<ul class="title5_uls">
@@ -2196,7 +2435,7 @@
 			</div>		
 		</div>
 		<!--家电数码-->
-		<div class="spjk">
+		<div class="spjk jk5" id="jdsm">
 			<div class="title5">
 				<p class="title5_p">家电数码</p>
 				<ul class="title5_uls">
@@ -2410,7 +2649,7 @@
 			</div>		
 		</div>
 		<!--母婴呵护-->
-		<div class="spjk">
+		<div class="spjk jk6" id="myhh">
 			<div class="title5">
 				<p class="title5_p">母婴呵护</p>
 				<ul class="title5_uls">
@@ -2737,7 +2976,7 @@
 		</div>
 	</div>
 	<!--顶部弹出搜索框-->
-	<div class="h_ssk">
+	<div class="h_ssk" style="display: none;">
 		<div class="h_s_z">
 			<div class="h_s_l">
 				<img src="imgs/h_s_logo.png"/>
@@ -2751,64 +2990,64 @@
 		</div>
 	</div>
 	<!--左侧导航-->
-	<div class="navLeft">
+	<div class="navLeft" style="display: none;">
 		<ul class="navLeft_uls">
 			<li>
-				<a href="#">
+				<a href="#xs">
 					<span></span>
 					限时抢购
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="#xptj">
 					<span></span>
 					新品推荐
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="#jxhd">
 					<span></span>
 					精选活动
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="#spjk">
 					<span></span>
 					食品健康
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="#ghmz">
 					<span></span>
 					个护美妆
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="#ccry">
 					<span></span>
 					餐厨日用
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="#fzps">
 					<span></span>
 					服装配饰
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="#byjf">
 					<span></span>
 					布艺家纺
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="#jdsm">
 					<span></span>
 					家电数码
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="#myhh">
 					<span></span>
 					母婴呵护
 				</a>

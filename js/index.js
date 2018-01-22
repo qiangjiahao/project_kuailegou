@@ -1,4 +1,376 @@
+$(function(){
+	//注册既得新人专享288元购物红包
+	$("#shopBags").click(function(){
+		$("#shopBag").css({"display":"none"});
+	})
+	//顶部上面 所有a的效果	
+	$(".header_topz a").mouseenter(function(){
+		$(this).css({"color":"#c4193f","text-decoration":"underline"});
+	});
+	$(".header_topz a").mouseleave(function(){
+		$(this).css({"color":"#8c8c8c","text-decoration":"none"});
+	});
+	//合作招商
+	$(".rightA").mouseenter(function(){
+		$("#rightA1").css({"background-color":"#fff","border-color":"#ccc"});
+		$("#h_t_r_div1").css({"display":"block"});
+	});
+	$(".rightA").mouseleave(function(){
+		$("#rightA1").css({"background-color":"#fbfbfb","border-color":"#fbfbfb"});
+		$("#h_t_r_div1").css({"display":"none"});
+	});
+	//客服中心
+	$(".rightA2").mouseenter(function(){
+		$("#rightA21").css({"background-color":"#fff","border-color":"#ccc"});
+		$("#h_t_r_div2").css({"display":"block"});
+	});
+	$(".rightA2").mouseleave(function(){
+		$("#rightA21").css({"background-color":"#fbfbfb","border-color":"#fbfbfb"});
+		$("#h_t_r_div2").css({"display":"none"});
+	});
+	//顶部搜索框a的效果
+	$(".h_c_ssk_nr a").mouseenter(function(){
+		$(this).css({"color":"#94193f"});
+	});
+	$(".h_c_ssk_nr a").mouseleave(function(){
+		$(this).css({"color":"#8c8c8c"});
+	});
+	//顶部导航条a的效果
+	$(".header_bottomz a").mouseenter(function(){
+		$(this).css({"color":"#94193f"});
+		$(".z_a1").css({"color":"#fff"});
+		$(".z_a2").css({"color":"#94193f"});
+	});
+	$(".header_bottomz a").mouseleave(function(){
+		$(this).css({"color":"#303030"});
+		$(".z_a1").css({"color":"#fff"});
+		$(".z_a2").css({"color":"#94193f"});
+	});
+	//轮播图右拉菜单
+	$(".slideshow_01").mouseenter(function(){
+		$(".slideshow_menu li:nth-of-type(1)").css({"background":"DeepSkyBlue"});
+		$("#s_m_n_div1").css({"display":"block"});
+	});
+	$(".slideshow_01").mouseleave(function(){
+		$(".slideshow_menu li:nth-of-type(1)").css({"background":"#fff"});
+		$("#s_m_n_div1").css({"display":"none"});
+	});
+	$(".slideshow_02").mouseenter(function(){
+		$(".slideshow_menu li:nth-of-type(2)").css({"background":"DeepSkyBlue"});
+		$("#s_m_n_div2").css({"display":"block"});
+	});
+	$(".slideshow_02").mouseleave(function(){
+		$(".slideshow_menu li:nth-of-type(2)").css({"background":"#fff"});
+		$("#s_m_n_div2").css({"display":"none"});
+	});
+	$(".slideshow_03").mouseenter(function(){
+		$(".slideshow_menu li:nth-of-type(3)").css({"background":"DeepSkyBlue"});
+		$("#s_m_n_div3").css({"display":"block"});
+	});
+	$(".slideshow_03").mouseleave(function(){
+		$(".slideshow_menu li:nth-of-type(3)").css({"background":"#fff"});
+		$("#s_m_n_div3").css({"display":"none"});
+	});
+	$(".slideshow_04").mouseenter(function(){
+		$(".slideshow_menu li:nth-of-type(4)").css({"background":"DeepSkyBlue"});
+		$("#s_m_n_div4").css({"display":"block"});
+	});
+	$(".slideshow_04").mouseleave(function(){
+		$(".slideshow_menu li:nth-of-type(4)").css({"background":"#fff"});
+		$("#s_m_n_div4").css({"display":"none"});
+	});
+	$(".slideshow_05").mouseenter(function(){
+		$(".slideshow_menu li:nth-of-type(5)").css({"background":"DeepSkyBlue"});
+		$("#s_m_n_div5").css({"display":"block"});
+	});
+	$(".slideshow_05").mouseleave(function(){
+		$(".slideshow_menu li:nth-of-type(5)").css({"background":"#fff"});
+		$("#s_m_n_div5").css({"display":"none"});
+	});
+	$(".slideshow_06").mouseenter(function(){
+		$(".slideshow_menu li:nth-of-type(6)").css({"background":"DeepSkyBlue"});
+		$("#s_m_n_div6").css({"display":"block"});
+	});
+	$(".slideshow_06").mouseleave(function(){
+		$(".slideshow_menu li:nth-of-type(6)").css({"background":"#fff"});
+		$("#s_m_n_div6").css({"display":"none"});
+	});
+	$(".slideshow_07").mouseenter(function(){
+		$(".slideshow_menu li:nth-of-type(7)").css({"background":"DeepSkyBlue"});
+		$("#s_m_n_div7").css({"display":"block"});
+	});
+	$(".slideshow_07").mouseleave(function(){
+		$(".slideshow_menu li:nth-of-type(7)").css({"background":"#fff"});
+		$("#s_m_n_div7").css({"display":"none"});
+	});
+	
+	//今日直播 昨日疯抢
+	$(".tshop li").hover(
+		function(){
+		$(this).css({"border-color":"#c4193f","transition": "all 0.3s ease-in 0s"});
+	},
+		function(){
+		$(this).css({"border-color":"#fff","transition": "all 0s ease-in 0s"});
+	}
+	);
+	
+	//左侧导航
+	$(document).scroll(function(){
+		var top = $(document).scrollTop();
+		console.log($(".xs").offset().top);
+		if(top>=$(".jz").offset().top){
+			$(".h_ssk").css({"display":"block"});
+		}else if(top<=$(".jz").offset().top){
+			$(".h_ssk").css({"display":"none"});
+		}
+		if(top>=$(".xs").offset().top){
+			$(".navLeft").show();
+			$(".navLeft li:nth-of-type(1) span").css({"background-position": "-40px 0px"});
+			$(".navLeft li:nth-of-type(1) a").css({"background-color": "#c4193f","color":"#fff"});
+			
+			$(".navLeft li:nth-of-type(2) span").css({"background-position": "0px -43px"});
+			$(".navLeft li:nth-of-type(2) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(3) span").css({"background-position": "0px -450px"});
+			$(".navLeft li:nth-of-type(3) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(4) span").css({"background-position": "0px -166px"});
+			$(".navLeft li:nth-of-type(4) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(5) span").css({"background-position": "0px -421px"});
+			$(".navLeft li:nth-of-type(5) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(6) span").css({"background-position": "0px -128px"});
+			$(".navLeft li:nth-of-type(6) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(7) span").css({"background-position": "0px -211px"});
+			$(".navLeft li:nth-of-type(7) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(8) span").css({"background-position": "0px -253px"});
+			$(".navLeft li:nth-of-type(8) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(9) span").css({"background-position": "0px -336px"});
+			$(".navLeft li:nth-of-type(9) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(10) span").css({"background-position": "0px -376px"});
+			$(".navLeft li:nth-of-type(10) a").css({"background-color": "#fff","color":"#434343"});
+		}
+		if(top>=$(".xptj").offset().top){
+			$(".navLeft li:nth-of-type(1) span").css({"background-position": "0px 0px"});
+			$(".navLeft li:nth-of-type(1) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(3) span").css({"background-position": "0px -450px"});
+			$(".navLeft li:nth-of-type(3) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(4) span").css({"background-position": "0px -166px"});
+			$(".navLeft li:nth-of-type(4) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(5) span").css({"background-position": "0px -421px"});
+			$(".navLeft li:nth-of-type(5) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(6) span").css({"background-position": "0px -128px"});
+			$(".navLeft li:nth-of-type(6) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(7) span").css({"background-position": "0px -211px"});
+			$(".navLeft li:nth-of-type(7) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(8) span").css({"background-position": "0px -253px"});
+			$(".navLeft li:nth-of-type(8) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(9) span").css({"background-position": "0px -336px"});
+			$(".navLeft li:nth-of-type(9) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(10) span").css({"background-position": "0px -376px"});
+			$(".navLeft li:nth-of-type(10) a").css({"background-color": "#fff","color":"#434343"});
+			
+			$(".navLeft li:nth-of-type(2) span").css({"background-position": "-40px -43px"});
+			$(".navLeft li:nth-of-type(2) a").css({"background-color": "#c4193f","color":"#fff"});
+		}
+		if(top>=$(".jxhd").offset().top){
+			$(".navLeft li:nth-of-type(1) span").css({"background-position": "0px 0px"});
+			$(".navLeft li:nth-of-type(1) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(4) span").css({"background-position": "0px -166px"});
+			$(".navLeft li:nth-of-type(4) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(5) span").css({"background-position": "0px -421px"});
+			$(".navLeft li:nth-of-type(5) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(6) span").css({"background-position": "0px -128px"});
+			$(".navLeft li:nth-of-type(6) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(7) span").css({"background-position": "0px -211px"});
+			$(".navLeft li:nth-of-type(7) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(8) span").css({"background-position": "0px -253px"});
+			$(".navLeft li:nth-of-type(8) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(9) span").css({"background-position": "0px -336px"});
+			$(".navLeft li:nth-of-type(9) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(10) span").css({"background-position": "0px -376px"});
+			$(".navLeft li:nth-of-type(10) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(2) span").css({"background-position": "0px -43px"});
+			$(".navLeft li:nth-of-type(2) a").css({"background-color": "#fff","color":"#434343"});
+			
+			$(".navLeft li:nth-of-type(3) span").css({"background-position": "-40px -450px"});
+			$(".navLeft li:nth-of-type(3) a").css({"background-color": "#c4193f","color":"#fff"});
+		}
+		if(top>=$(".spjk").offset().top){
+			$(".navLeft li:nth-of-type(1) span").css({"background-position": "0px 0px"});
+			$(".navLeft li:nth-of-type(1) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(5) span").css({"background-position": "0px -421px"});
+			$(".navLeft li:nth-of-type(5) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(6) span").css({"background-position": "0px -128px"});
+			$(".navLeft li:nth-of-type(6) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(7) span").css({"background-position": "0px -211px"});
+			$(".navLeft li:nth-of-type(7) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(8) span").css({"background-position": "0px -253px"});
+			$(".navLeft li:nth-of-type(8) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(9) span").css({"background-position": "0px -336px"});
+			$(".navLeft li:nth-of-type(9) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(10) span").css({"background-position": "0px -376px"});
+			$(".navLeft li:nth-of-type(10) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(2) span").css({"background-position": "0px -43px"});
+			$(".navLeft li:nth-of-type(2) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(3) span").css({"background-position": "0px -450px"});
+			$(".navLeft li:nth-of-type(3) a").css({"background-color": "#fff","color":"#434343"});
+			
+			$(".navLeft li:nth-of-type(4) span").css({"background-position": "-40px -166px"});
+			$(".navLeft li:nth-of-type(4) a").css({"background-color": "#c4193f","color":"#fff"});
+		}
+		if(top>=$(".jk1").offset().top){
+			$(".navLeft li:nth-of-type(1) span").css({"background-position": "0px 0px"});
+			$(".navLeft li:nth-of-type(1) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(6) span").css({"background-position": "0px -128px"});
+			$(".navLeft li:nth-of-type(6) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(7) span").css({"background-position": "0px -211px"});
+			$(".navLeft li:nth-of-type(7) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(8) span").css({"background-position": "0px -253px"});
+			$(".navLeft li:nth-of-type(8) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(9) span").css({"background-position": "0px -336px"});
+			$(".navLeft li:nth-of-type(9) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(10) span").css({"background-position": "0px -376px"});
+			$(".navLeft li:nth-of-type(10) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(2) span").css({"background-position": "0px -43px"});
+			$(".navLeft li:nth-of-type(2) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(3) span").css({"background-position": "0px -450px"});
+			$(".navLeft li:nth-of-type(3) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(4) span").css({"background-position": "0px -166px"});
+			$(".navLeft li:nth-of-type(4) a").css({"background-color": "#fff","color":"#434343"});
+			
+			$(".navLeft li:nth-of-type(5) span").css({"background-position": "-40px -421px"});
+			$(".navLeft li:nth-of-type(5) a").css({"background-color": "#c4193f","color":"#fff"});
+		}
+		if(top>=$(".jk2").offset().top){
+			$(".navLeft li:nth-of-type(1) span").css({"background-position": "0px 0px"});
+			$(".navLeft li:nth-of-type(1) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(7) span").css({"background-position": "0px -211px"});
+			$(".navLeft li:nth-of-type(7) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(8) span").css({"background-position": "0px -253px"});
+			$(".navLeft li:nth-of-type(8) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(9) span").css({"background-position": "0px -336px"});
+			$(".navLeft li:nth-of-type(9) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(10) span").css({"background-position": "0px -376px"});
+			$(".navLeft li:nth-of-type(10) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(2) span").css({"background-position": "0px -43px"});
+			$(".navLeft li:nth-of-type(2) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(3) span").css({"background-position": "0px -450px"});
+			$(".navLeft li:nth-of-type(3) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(4) span").css({"background-position": "0px -166px"});
+			$(".navLeft li:nth-of-type(4) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(5) span").css({"background-position": "0px -421px"});
+			$(".navLeft li:nth-of-type(5) a").css({"background-color": "#fff","color":"#434343"});
+			
+			$(".navLeft li:nth-of-type(6) span").css({"background-position": "-40px -128px"});
+			$(".navLeft li:nth-of-type(6) a").css({"background-color": "#c4193f","color":"#fff"});
+		}
+		if(top>=$(".jk3").offset().top){
+			$(".navLeft li:nth-of-type(1) span").css({"background-position": "0px 0px"});
+			$(".navLeft li:nth-of-type(1) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(8) span").css({"background-position": "0px -253px"});
+			$(".navLeft li:nth-of-type(8) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(9) span").css({"background-position": "0px -336px"});
+			$(".navLeft li:nth-of-type(9) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(10) span").css({"background-position": "0px -376px"});
+			$(".navLeft li:nth-of-type(10) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(2) span").css({"background-position": "0px -43px"});
+			$(".navLeft li:nth-of-type(2) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(3) span").css({"background-position": "0px -450px"});
+			$(".navLeft li:nth-of-type(3) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(4) span").css({"background-position": "0px -166px"});
+			$(".navLeft li:nth-of-type(4) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(5) span").css({"background-position": "0px -421px"});
+			$(".navLeft li:nth-of-type(5) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(6) span").css({"background-position": "0px -128px"});
+			$(".navLeft li:nth-of-type(6) a").css({"background-color": "#fff","color":"#434343"});
+			
+			$(".navLeft li:nth-of-type(7) span").css({"background-position": "-40px -211px"});
+			$(".navLeft li:nth-of-type(7) a").css({"background-color": "#c4193f","color":"#fff"});
+		}
+		if(top>=$(".jk4").offset().top){
+			$(".navLeft li:nth-of-type(1) span").css({"background-position": "0px 0px"});
+			$(".navLeft li:nth-of-type(1) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(9) span").css({"background-position": "0px -336px"});
+			$(".navLeft li:nth-of-type(9) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(10) span").css({"background-position": "0px -376px"});
+			$(".navLeft li:nth-of-type(10) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(2) span").css({"background-position": "0px -43px"});
+			$(".navLeft li:nth-of-type(2) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(3) span").css({"background-position": "0px -450px"});
+			$(".navLeft li:nth-of-type(3) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(4) span").css({"background-position": "0px -166px"});
+			$(".navLeft li:nth-of-type(4) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(5) span").css({"background-position": "0px -421px"});
+			$(".navLeft li:nth-of-type(5) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(6) span").css({"background-position": "0px -128px"});
+			$(".navLeft li:nth-of-type(6) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(7) span").css({"background-position": "0px -211px"});
+			$(".navLeft li:nth-of-type(7) a").css({"background-color": "#fff","color":"#434343"});
+			
+			$(".navLeft li:nth-of-type(8) span").css({"background-position": "-40px -253px"});
+			$(".navLeft li:nth-of-type(8) a").css({"background-color": "#c4193f","color":"#fff"});
+		}
+		if(top>=$(".jk5").offset().top){
+			$(".navLeft li:nth-of-type(1) span").css({"background-position": "0px 0px"});
+			$(".navLeft li:nth-of-type(1) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(10) span").css({"background-position": "0px -376px"});
+			$(".navLeft li:nth-of-type(10) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(2) span").css({"background-position": "0px -43px"});
+			$(".navLeft li:nth-of-type(2) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(3) span").css({"background-position": "0px -450px"});
+			$(".navLeft li:nth-of-type(3) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(4) span").css({"background-position": "0px -166px"});
+			$(".navLeft li:nth-of-type(4) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(5) span").css({"background-position": "0px -421px"});
+			$(".navLeft li:nth-of-type(5) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(6) span").css({"background-position": "0px -128px"});
+			$(".navLeft li:nth-of-type(6) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(7) span").css({"background-position": "0px -211px"});
+			$(".navLeft li:nth-of-type(7) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(8) span").css({"background-position": "0px -253px"});
+			$(".navLeft li:nth-of-type(8) a").css({"background-color": "#fff","color":"#434343"});
+			
+			$(".navLeft li:nth-of-type(9) span").css({"background-position": "-40px -336px"});
+			$(".navLeft li:nth-of-type(9) a").css({"background-color": "#c4193f","color":"#fff"});
+		}
+		if(top>=$(".jk6").offset().top){
+			$(".navLeft li:nth-of-type(1) span").css({"background-position": "0px 0px"});
+			$(".navLeft li:nth-of-type(1) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(2) span").css({"background-position": "0px -43px"});
+			$(".navLeft li:nth-of-type(2) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(3) span").css({"background-position": "0px -450px"});
+			$(".navLeft li:nth-of-type(3) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(4) span").css({"background-position": "0px -166px"});
+			$(".navLeft li:nth-of-type(4) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(5) span").css({"background-position": "0px -421px"});
+			$(".navLeft li:nth-of-type(5) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(6) span").css({"background-position": "0px -128px"});
+			$(".navLeft li:nth-of-type(6) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(7) span").css({"background-position": "0px -211px"});
+			$(".navLeft li:nth-of-type(7) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(8) span").css({"background-position": "0px -253px"});
+			$(".navLeft li:nth-of-type(8) a").css({"background-color": "#fff","color":"#434343"});
+			$(".navLeft li:nth-of-type(9) span").css({"background-position": "0px -336px"});
+			$(".navLeft li:nth-of-type(9) a").css({"background-color": "#fff","color":"#434343"});
+			
+			$(".navLeft li:nth-of-type(10) span").css({"background-position": "-40px -376px"});
+			$(".navLeft li:nth-of-type(10) a").css({"background-color": "#c4193f","color":"#fff"});
+		}
+		if(top+40<=$(".xs").offset().top){
+        	$(".navLeft").css({"display":"none"});
+        }
+		
+	});
+});
 
+
+
+	
+
+
+
+
+
+
+//轮播图
 var arr=["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"];
 var ord = 0;//代表当前图片的序号，从0开始。
 var myTimer = null;
@@ -91,3 +463,6 @@ $(function () {
     //3、自动播放
     autoPlay();
 });
+
+
+
