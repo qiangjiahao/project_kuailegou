@@ -1,61 +1,14 @@
-@charset "utf-8";
-/* CSS Document */
-body,div,p,ul,ol,li,dl,dt,dd,table,tr,td,form,hr,h1,h2,h3,h4,h5,h6,img,input{
-    margin:0;
-    padding:0;
-}
-body{
-    font-family:"微软雅黑",Arial;
-    font-size: 12px;
-}
-a{
-    text-decoration:none;
-}
-ul,ol{
-    list-style:none;
-}
-img,input{
-    border: 0;
-}
-//头部
-.header{
-    width: 100%;
-    background-color: #fff;
-    .h_z{
-        width: 1000px;
-        height: 68px;
-        margin: 0 auto;
-        margin-top: 30px;
-        margin-bottom: 19px;
-        .h_z_left{
-            float: left;
-            width: 74px;
-            margin-right: 7px;
-            a{
-                height: 68px;
-                img{
-                    width: 72px;
-                    height: 68px;
-                }
-            }
-        }
-        .h_z_rigth{
-            float: right;
-            margin-top: 19px;
-        }
-    }
-}
-//主体部分
 .mainbody{
     width: 980px;
     height: 600px;
     margin: 0 auto;
     .m_b_z{
+        overflow: hidden;
         .m_b_z_l{
             float: left;
             width: 600px;
             text-align: center;
-            padding-top: 50px;
+            padding-top: 30px;
             img{
                 width: 560px;
                 height: 360px;
@@ -88,6 +41,20 @@ img,input{
                         color: #8c8c8c;
                         a{
                             color: #c41f3a;
+                        }
+                    }
+                }
+                .l_method{
+                    padding: 0 0 10px 0;
+                    text-align: left;
+                    .s_radio{
+                        padding-right: 45px;
+                        input{
+                            vertical-align: middle;
+                        }
+                        label{
+                            vertical-align: middle;
+                            padding-left: 5px;
                         }
                     }
                 }
@@ -169,15 +136,6 @@ img,input{
                                 }
                             }
                         }
-                        .f_div3{
-                            color: #333333;
-                            border: 1px solid #c8c8c8;
-                            height: 25px;
-                            line-height: 25px;
-                            padding-left: 6px;
-                            width: 157px;
-                            padding: 7px 0 7px 6px;
-                        }
                         .f_div4{
                             .f_d_a{
                                 display: block;
@@ -204,6 +162,30 @@ img,input{
                                     }
                                 }
                             }
+                        }
+                    }
+                }
+                .zh_login{
+                    ul{
+                        margin-top: 10px;
+                        li{
+                            display: inline-block;
+                            margin-right: 10px;
+                            a{
+                                display: block;
+                                width: 50px;
+                                height: 50px;
+                                background: url(../imgs/login_icon_list.png) 0 0;
+                            }
+                        }
+                        li:nth-of-type(1) a{
+                            background-position: 0 -32px;
+                        }
+                        li:nth-of-type(2) a{
+                            background-position: -74px -32px;
+                        }
+                        li:nth-of-type(3) a{
+                            background-position: -143px -32px;
                         }
                     }
                 }

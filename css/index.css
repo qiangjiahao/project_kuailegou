@@ -327,9 +327,10 @@ img, input {
 .h_b_d {
   position: relative;
   left: 56px;
-  top: -46px; }
+  top: -40px; }
 
 .h_b_d img {
+  position: absolute;
   width: 30px;
   height: 18px; }
 
@@ -688,16 +689,17 @@ img, input {
         .shop .xs .title2 .title2_uls li {
           float: left;
           position: relative;
-          height: 37px; }
+          height: 37px;
+          cursor: pointer; }
           .shop .xs .title2 .title2_uls li a {
             padding: 0 12px;
             display: block;
             height: 35px;
             line-height: 35px;
             margin-left: 0px;
-            border-right: 2px solid red;
-            border-left: 2px solid red;
-            border-top: 2px solid red;
+            border-right: 2px solid #fff;
+            border-left: 2px solid #fff;
+            border-top: 2px solid #fff;
             font-size: 14px; }
     .shop .xs .xsshop div {
       margin-top: 20px;
@@ -938,9 +940,9 @@ img, input {
             height: 35px;
             line-height: 35px;
             margin-left: 0px;
-            border-right: 2px solid red;
-            border-left: 2px solid red;
-            border-top: 2px solid red;
+            border-right: 2px solid #fbfbfb;
+            border-left: 2px solid #fbfbfb;
+            border-top: 2px solid #fbfbfb;
             font-size: 14px; }
     .shop .spjk .jkPhoto {
       width: 100%;
@@ -957,7 +959,7 @@ img, input {
           padding: 0 0 5px 0;
           margin-bottom: 15px;
           position: relative;
-          border: 3px solid green; }
+          border: 3px solid #fff; }
           .shop .spjk .jkPhoto .gwPhoto li .jkgw_a1 {
             display: inline-block;
             width: 186px;

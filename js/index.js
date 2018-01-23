@@ -103,17 +103,96 @@ $(function(){
 		$(".slideshow_menu li:nth-of-type(7)").css({"background":"#fff"});
 		$("#s_m_n_div7").css({"display":"none"});
 	});
+	//HOT
+	setInterval(function(){
+		$("#hot").ready(function(){
+  			$("#hot").animate({top: '+3px'},600);
+		});
+		$("#hot").ready(function(){
+  			$("#hot").animate({top: '-3px'},600);
+		});	
+	},3000);
+
 	
-	//今日直播 昨日疯抢
+	
+	//今日直播 昨日疯抢    新品推荐
 	$(".tshop li").hover(
 		function(){
-		$(this).css({"border-color":"#c4193f","transition": "all 0.3s ease-in 0s"});
-	},
+			$(this).css({"border-color":"#c4193f","transition": "all 0.3s ease-in 0s","text-decoration":"underline"});
+		},
 		function(){
-		$(this).css({"border-color":"#fff","transition": "all 0s ease-in 0s"});
-	}
+			$(this).css({"border-color":"#fff","transition": "all 0s ease-in 0s","text-decoration":"none"});
+		}
 	);
 	
+	$(".jkPhoto li").hover(
+		function(){
+			$(this).css({"border-color":"#c4193f","transition": "all 0.3s ease-in 0s","text-decoration":"underline"});
+			$(".jkPhoto li:nth-of-type(1)").css({"border-color":"#fff"});
+		},
+		function(){
+			$(this).css({"border-color":"#fff","transition": "all 0s ease-in 0s","text-decoration":"none"});
+		}
+	);
+	
+	$(".title2_uls a").hover(
+		function(){
+			$(this).css({"border-color":"#c4193f","transition": "all 0.3s ease-in 0s"});
+		},
+		function(){
+			$(this).css({"border-color":"#fbfbfb","transition": "all 0s ease-in 0s"});
+		}
+	);
+	
+	$(".title5 a").hover(
+		function(){
+			$(this).css({"border-color":"#c4193f","transition": "all 0.3s ease-in 0s"});
+		},
+		function(){
+			$(this).css({"border-color":"#fbfbfb","transition": "all 0s ease-in 0s"});
+		}
+	);
+	
+	//右侧导航
+	$(".nR_c_t_zh").mouseenter(function(){
+		$(".zh_dl").css({"display":"block"});
+	});
+	$(".nR_c_t_zh").mouseleave(function(){
+		$(".zh_dl").css({"display":"none"});
+	});
+	
+	$(".n_c_b_div1").mouseenter(function(){
+		$(".d_d").css({"display":"block"});
+	});
+	$(".n_c_b_div1").mouseleave(function(){
+		$(".d_d").css({"display":"none"});
+	});
+	
+	$(".n_c_b_div2").mouseenter(function(){
+		$(".d2_d2").css({"display":"block"});
+	});
+	$(".n_c_b_div2").mouseleave(function(){
+		$(".d2_d2").css({"display":"none"});
+	});
+	
+	$(".d2_d2 a").mouseenter(function(){
+		$(this).css({"color":"#c4193f","text-decoration":"underline"});
+	});
+	$(".d2_d2 a").mouseleave(function(){
+		$(this).css({"color":"#8c8c8c","text-decoration":"none"});
+	});
+	
+	$(".ared").mouseenter(function(){
+		$(this).css({"background-color":"#94193f"});
+	});
+	$(".ared").mouseleave(function(){
+		$(this).css({"background-color":"#444851"});
+	});
+	
+	$(".n_c_b_div3").click(function(){
+		$('body,html').animate({scrollTop:0},1000);
+	});
+
 	//左侧导航
 	$(document).scroll(function(){
 		var top = $(document).scrollTop();
