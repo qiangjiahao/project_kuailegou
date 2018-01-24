@@ -36,16 +36,16 @@
 							</div>
 						</div>
 						<div class="l_method">
-							<span class="s_radio">
+							<span class="s_radio" >
 								<input type="radio" checked name="s_r" id="s_r1"/>
-								<label for="s_r1">快捷登录</label>
+								<label for="s_r1" id="sp123">快捷登录</label>
 							</span>
 							<span class="s_radio">
 								<input type="radio" name="s_r" id="s_r2"/>
-								<label for="s_r2">普通密码登录</label>
+								<label for="s_r2" id="sp1231">普通密码登录</label>
 							</span>
 						</div>
-						<div class="l_nr">
+						<div class="l_nr" style="display: block;">
 							<form>
 								<div class="f_div1">
 									<input type="text" placeholder="请输入手机号"/>
@@ -64,6 +64,40 @@
 											您输入的短信验证码有误
 										</div>
 									</div>
+								</div>
+								<div class="f_div4">
+									<a href="#" class="f_d_a">立即注册</a>
+								</div>
+							</form>
+						</div>
+						<div class="l_nr2" style="display: none;">
+							<form>
+								<div class="f_div1">
+									<input type="text" placeholder="请输入手机号"/>
+									<div>
+										<div>请输入11位手机号码</div>
+									</div>
+								</div>
+								<div class="f_div1">
+									<input type="password" placeholder="请输入密码"/>
+									<div>
+										<div>请输入您的密码,您的密码可能为字母、数字或符号组合</div>
+									</div>
+								</div>
+								<div class="f_div3">
+									<input type="password" placeholder="请输入验证码"/>
+									<div>
+										<div>请输入右侧验证码，不区分大小写</div>
+									</div>
+								</div>
+								<div class="f_div5">
+									<span>
+										<input type="checkbox" id="check1"/>
+										<label>记住用户名</label>
+									</span>
+									<span>
+										<a>忘记密码？</a>
+									</span>
 								</div>
 								<div class="f_div4">
 									<a href="#" class="f_d_a">立即注册</a>
@@ -115,3 +149,5 @@
 		</div>
 	</body>
 </html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+<script type="text/javascript" src="js/login.js" ></script>
