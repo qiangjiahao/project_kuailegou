@@ -1,0 +1,61 @@
+.content{
+    width: 1200px;
+    margin: 0 auto;
+    .c_title{
+        height: 57px;
+        line-height: 57px;
+        a{
+            color: #333333;
+            font-size: 14px;
+        }
+        span{
+            color: #666666;
+            font-size: 14px;
+            padding: 0 8px;
+        }
+    }
+    .c_shop{
+        .s_photo{
+            .p_left{
+                float: left;
+                width: 380px;
+                
+            }
+            .p_content{
+                float: left;
+                margin-left: 30px;
+                width: 560px;
+                .p_c_c{
+                    h1{
+                        color: #303030;
+                        font-size: 18px;
+                        font-weight: normal;
+                        line-height: 20px;
+                        padding-top: 10px;
+                        max-height: 40px;
+                    }
+                    h2{
+                        font-size: 14px;
+                        color: #c41f3a;
+                        font-weight: normal;
+                        margin-top: 15px;
+                        line-height: 20px;
+                        max-height: 40px;
+                    }
+                }
+            }
+            .p_right{
+                width: 200px;
+                float: right;
+            }
+        }
+        .s_photo::after{
+            clear: both;
+            content: ".";
+            display: block;
+            height: 0;
+            overflow: hidden;
+            visibility: hidden;
+        }  
+    }
+}

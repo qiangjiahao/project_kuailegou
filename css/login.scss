@@ -136,6 +136,25 @@
                                 }
                             }
                         }
+                        .f_div3{
+                            input{
+                                color: #333333;
+                                border: 1px solid #c8c8c8;
+                                height: 25px;
+                                line-height: 25px;
+                                padding-left: 6px;
+                                width: 293px;
+                                padding: 7px 0 7px 6px;
+                            }
+                            div{
+                                height: 23px;
+                                line-height: 23px;
+                                margin-bottom: 3px;
+                                div{
+                                    color: #8c8c8c;
+                                }
+                            }
+                        }
                         .f_div4{
                             .f_d_a{
                                 display: block;
@@ -149,23 +168,99 @@
                                 font-family: "宋体";
                                 font-weight: bold;
                             }
+                        }
+                    }
+                }
+                .l_nr2{
+                    width: 301px;
+                    form{
+                        div{
+                            margin-bottom: 10px;
+                            position: relative;
+                        }
+                        .f_div1{
+                            input{
+                                color: #333333;
+                                border: 1px solid #c8c8c8;
+                                height: 25px;
+                                line-height: 25px;
+                                padding-left: 6px;
+                                width: 293px;
+                                padding: 7px 0 7px 6px;
+                            }
                             div{
-                                padding-top: 5px;
+                                height: 23px;
+                                line-height: 23px;
+                                margin-bottom: 3px;
+                                div{
+                                    color: #8c8c8c;
+                                }
+                            }
+                        }
+                        .f_div3{
+                            input{
+                                color: #333333;
+                                border: 1px solid #c8c8c8;
+                                height: 25px;
+                                line-height: 25px;
+                                padding-left: 6px;
+                                width: 157px;
+                                padding: 7px 0 7px 6px;
+                            }
+                            div{
+                                height: 23px;
+                                line-height: 23px;
+                                margin-bottom: 3px;
+                                div{
+                                    color: #8c8c8c;
+                                }
+                            }
+                        }
+                        .f_div5{
+                            overflow: hidden;
+                            span:first-child{
+                                float: left;
                                 input{
                                     vertical-align: middle;
                                 }
                                 label{
-                                    color: #767676;
-                                    padding-left: 6px;
-                                    a{
-                                        color: #c41f3a;
-                                    }
+                                    vertical-align: middle;
                                 }
+                            }
+                            span:last-child{
+                                float: right;
+                                a{
+                                    color: #595959;
+                                    display: block;
+                                    text-align: right;
+                                }
+                            }
+                        }
+                        .f_div4{
+                            .f_d_a{
+                                display: block;
+                                width: 310px;
+                                height: 40px;
+                                color: #fff;
+                                line-height: 40px;
+                                background-color: #94193f;
+                                text-align: center;
+                                font-size: 14px;
+                                font-family: "宋体";
+                                font-weight: bold;
                             }
                         }
                     }
                 }
                 .zh_login{
+                    h5{
+                        color: #333;
+                        height: 24px;
+                        line-height: 24px;
+                        font-size: 12px;
+                        font-family: "宋体";
+                        font-weight: normal;
+                    }
                     ul{
                         margin-top: 10px;
                         li{

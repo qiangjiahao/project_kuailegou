@@ -1,0 +1,44 @@
+.content {
+  width: 1200px;
+  margin: 0 auto; }
+  .content .c_title {
+    height: 57px;
+    line-height: 57px; }
+    .content .c_title a {
+      color: #333333;
+      font-size: 14px; }
+    .content .c_title span {
+      color: #666666;
+      font-size: 14px;
+      padding: 0 8px; }
+  .content .c_shop .s_photo .p_left {
+    float: left;
+    width: 380px; }
+  .content .c_shop .s_photo .p_content {
+    float: left;
+    margin-left: 30px;
+    width: 560px; }
+    .content .c_shop .s_photo .p_content .p_c_c h1 {
+      color: #303030;
+      font-size: 18px;
+      font-weight: normal;
+      line-height: 20px;
+      padding-top: 10px;
+      max-height: 40px; }
+    .content .c_shop .s_photo .p_content .p_c_c h2 {
+      font-size: 14px;
+      color: #c41f3a;
+      font-weight: normal;
+      margin-top: 15px;
+      line-height: 20px;
+      max-height: 40px; }
+  .content .c_shop .s_photo .p_right {
+    width: 200px;
+    float: right; }
+  .content .c_shop .s_photo::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden; }

@@ -170,13 +170,23 @@ img,input{
                             }
                         }
                         .f_div3{
-                            color: #333333;
-                            border: 1px solid #c8c8c8;
-                            height: 25px;
-                            line-height: 25px;
-                            padding-left: 6px;
-                            width: 157px;
-                            padding: 7px 0 7px 6px;
+                            input{
+                                color: #333333;
+                                border: 1px solid #c8c8c8;
+                                height: 25px;
+                                line-height: 25px;
+                                padding-left: 6px;
+                                width: 157px;
+                                padding: 7px 0 7px 6px;
+                            }
+                            div{
+                                height: 23px;
+                                line-height: 23px;
+                                margin-bottom: 3px;
+                                div{
+                                    color: #8c8c8c;
+                                }
+                            }
                         }
                         .f_div4{
                             .f_d_a{

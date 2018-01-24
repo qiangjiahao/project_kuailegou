@@ -140,7 +140,7 @@ img, input {
               height: 18px;
               display: inline-block;
               vertical-align: middle; }
-        .mainbody .m_b_z .m_b_z_r .login .l_nr form .f_div3 {
+        .mainbody .m_b_z .m_b_z_r .login .l_nr form .f_div3 input {
           color: #333333;
           border: 1px solid #c8c8c8;
           height: 25px;
@@ -148,6 +148,12 @@ img, input {
           padding-left: 6px;
           width: 157px;
           padding: 7px 0 7px 6px; }
+        .mainbody .m_b_z .m_b_z_r .login .l_nr form .f_div3 div {
+          height: 23px;
+          line-height: 23px;
+          margin-bottom: 3px; }
+          .mainbody .m_b_z .m_b_z_r .login .l_nr form .f_div3 div div {
+            color: #8c8c8c; }
         .mainbody .m_b_z .m_b_z_r .login .l_nr form .f_div4 .f_d_a {
           display: block;
           width: 310px;

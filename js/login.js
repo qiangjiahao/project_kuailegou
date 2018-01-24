@@ -1,0 +1,10 @@
+$(function(){
+	$("#sp123").click(function(){
+		$('.l_nr').css({"display":"block"});
+		$('.l_nr2').css({"display":"none"});
+	});
+	$("#sp1231").click(function(){
+		$('.l_nr2').css({"display":"block"});
+		$('.l_nr').css({"display":"none"});
+	});
+});

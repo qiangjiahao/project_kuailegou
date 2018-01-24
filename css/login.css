@@ -112,6 +112,20 @@
                 height: 18px;
                 display: inline-block;
                 vertical-align: middle; }
+          .mainbody .m_b_z .m_b_z_r .login .l_nr form .f_div3 input {
+            color: #333333;
+            border: 1px solid #c8c8c8;
+            height: 25px;
+            line-height: 25px;
+            padding-left: 6px;
+            width: 293px;
+            padding: 7px 0 7px 6px; }
+          .mainbody .m_b_z .m_b_z_r .login .l_nr form .f_div3 div {
+            height: 23px;
+            line-height: 23px;
+            margin-bottom: 3px; }
+            .mainbody .m_b_z .m_b_z_r .login .l_nr form .f_div3 div div {
+              color: #8c8c8c; }
           .mainbody .m_b_z .m_b_z_r .login .l_nr form .f_div4 .f_d_a {
             display: block;
             width: 310px;
@@ -123,15 +137,71 @@
             font-size: 14px;
             font-family: "宋体";
             font-weight: bold; }
-          .mainbody .m_b_z .m_b_z_r .login .l_nr form .f_div4 div {
-            padding-top: 5px; }
-            .mainbody .m_b_z .m_b_z_r .login .l_nr form .f_div4 div input {
-              vertical-align: middle; }
-            .mainbody .m_b_z .m_b_z_r .login .l_nr form .f_div4 div label {
-              color: #767676;
-              padding-left: 6px; }
-              .mainbody .m_b_z .m_b_z_r .login .l_nr form .f_div4 div label a {
-                color: #c41f3a; }
+        .mainbody .m_b_z .m_b_z_r .login .l_nr2 {
+          width: 301px; }
+          .mainbody .m_b_z .m_b_z_r .login .l_nr2 form div {
+            margin-bottom: 10px;
+            position: relative; }
+          .mainbody .m_b_z .m_b_z_r .login .l_nr2 form .f_div1 input {
+            color: #333333;
+            border: 1px solid #c8c8c8;
+            height: 25px;
+            line-height: 25px;
+            padding-left: 6px;
+            width: 293px;
+            padding: 7px 0 7px 6px; }
+          .mainbody .m_b_z .m_b_z_r .login .l_nr2 form .f_div1 div {
+            height: 23px;
+            line-height: 23px;
+            margin-bottom: 3px; }
+            .mainbody .m_b_z .m_b_z_r .login .l_nr2 form .f_div1 div div {
+              color: #8c8c8c; }
+          .mainbody .m_b_z .m_b_z_r .login .l_nr2 form .f_div3 input {
+            color: #333333;
+            border: 1px solid #c8c8c8;
+            height: 25px;
+            line-height: 25px;
+            padding-left: 6px;
+            width: 157px;
+            padding: 7px 0 7px 6px; }
+          .mainbody .m_b_z .m_b_z_r .login .l_nr2 form .f_div3 div {
+            height: 23px;
+            line-height: 23px;
+            margin-bottom: 3px; }
+            .mainbody .m_b_z .m_b_z_r .login .l_nr2 form .f_div3 div div {
+              color: #8c8c8c; }
+          .mainbody .m_b_z .m_b_z_r .login .l_nr2 form .f_div5 {
+            overflow: hidden; }
+            .mainbody .m_b_z .m_b_z_r .login .l_nr2 form .f_div5 span:first-child {
+              float: left; }
+              .mainbody .m_b_z .m_b_z_r .login .l_nr2 form .f_div5 span:first-child input {
+                vertical-align: middle; }
+              .mainbody .m_b_z .m_b_z_r .login .l_nr2 form .f_div5 span:first-child label {
+                vertical-align: middle; }
+            .mainbody .m_b_z .m_b_z_r .login .l_nr2 form .f_div5 span:last-child {
+              float: right; }
+              .mainbody .m_b_z .m_b_z_r .login .l_nr2 form .f_div5 span:last-child a {
+                color: #595959;
+                display: block;
+                text-align: right; }
+          .mainbody .m_b_z .m_b_z_r .login .l_nr2 form .f_div4 .f_d_a {
+            display: block;
+            width: 310px;
+            height: 40px;
+            color: #fff;
+            line-height: 40px;
+            background-color: #94193f;
+            text-align: center;
+            font-size: 14px;
+            font-family: "宋体";
+            font-weight: bold; }
+        .mainbody .m_b_z .m_b_z_r .login .zh_login h5 {
+          color: #333;
+          height: 24px;
+          line-height: 24px;
+          font-size: 12px;
+          font-family: "宋体";
+          font-weight: normal; }
         .mainbody .m_b_z .m_b_z_r .login .zh_login ul {
           margin-top: 10px; }
           .mainbody .m_b_z .m_b_z_r .login .zh_login ul li {
