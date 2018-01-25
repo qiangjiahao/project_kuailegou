@@ -45,3 +45,34 @@ img,input{
         }
     }
 }
+
+.footer_bottom{  
+    .f_b_z{
+        width: 1000px;
+        height: 186px;
+        margin: 0 auto;
+        .f_b_z_p1{
+            padding-top: 10px;
+            text-align: center;
+            font-family: "宋体";
+            color: #7e7e7e;
+            line-height: 25px;
+            span{
+                    font-family: Arial;
+                    color: #666666;
+            }
+            .f_b_z_a1{
+                color: #7e7e7e;
+            }
+            .f_b_z_a2{
+                color: #434343;
+                font-family: "微软雅黑";
+                vertical-align: top;
+            }
+        }
+        .f_b_z_p2{
+            text-align: center;
+            padding: 30px 0 40px 0;
+        }
+    }
+}

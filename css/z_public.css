@@ -38,3 +38,26 @@ img, input {
     .header .h_z .h_z_rigth {
       float: right;
       margin-top: 19px; }
+
+.footer_bottom .f_b_z {
+  width: 1000px;
+  height: 186px;
+  margin: 0 auto; }
+  .footer_bottom .f_b_z .f_b_z_p1 {
+    padding-top: 10px;
+    text-align: center;
+    font-family: "宋体";
+    color: #7e7e7e;
+    line-height: 25px; }
+    .footer_bottom .f_b_z .f_b_z_p1 span {
+      font-family: Arial;
+      color: #666666; }
+    .footer_bottom .f_b_z .f_b_z_p1 .f_b_z_a1 {
+      color: #7e7e7e; }
+    .footer_bottom .f_b_z .f_b_z_p1 .f_b_z_a2 {
+      color: #434343;
+      font-family: "微软雅黑";
+      vertical-align: top; }
+  .footer_bottom .f_b_z .f_b_z_p2 {
+    text-align: center;
+    padding: 30px 0 40px 0; }

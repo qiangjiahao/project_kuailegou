@@ -3,9 +3,12 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>用户登录</title>
+		<meta http-equiv="Expires" content="0">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-control" content="no-cache">
+		<meta http-equiv="Cache" content="no-cache">
 		<link rel="stylesheet" type="text/css" href="css/login.css"/>
-		<link rel="stylesheet" type="text/css" href="css/header.css"/>
-		<link rel="stylesheet" type="text/css" href="css/footer_bottom_public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/z_public.css"/>
 	</head>
 	<body>
 		<!--头部-->
@@ -32,7 +35,7 @@
 						<div class="l_title">
 							<h2>登录快乐购</h2>
 							<div>
-								还没有快乐购账号<a href="#">快速注册</a>
+								还没有快乐购账号<a href="register.html">快速注册</a>
 							</div>
 						</div>
 						<div class="l_method">
@@ -73,13 +76,13 @@
 						<div class="l_nr2" style="display: none;">
 							<form>
 								<div class="f_div1">
-									<input type="text" placeholder="请输入手机号"/>
+									<input type="text" placeholder="请输入手机号" id="username"/>
 									<div>
 										<div>请输入11位手机号码</div>
 									</div>
 								</div>
 								<div class="f_div1">
-									<input type="password" placeholder="请输入密码"/>
+									<input type="password" placeholder="请输入密码" id="userpass"/>
 									<div>
 										<div>请输入您的密码,您的密码可能为字母、数字或符号组合</div>
 									</div>
@@ -100,7 +103,7 @@
 									</span>
 								</div>
 								<div class="f_div4">
-									<a href="#" class="f_d_a">立即注册</a>
+									<a href="#" class="f_d_a" id="btnlogin">立即注册</a>
 								</div>
 							</form>
 						</div>
