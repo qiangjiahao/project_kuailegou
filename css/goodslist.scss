@@ -59,12 +59,238 @@
                 }
                 li:nth-of-type(2){
                     span{
-                        background: url(../images/icon_list.png) repeat scroll -157px -652px;
+                        background: url(../imgs/icon_list.png) repeat scroll -157px -652px;
                         display: inline-block;
                         height: 13px;
                         margin-left: 4px;
                         vertical-align: middle;
                         width: 11px;
+                    }
+                }
+                li:nth-of-type(3){
+                    span{
+                        background: url(../imgs/icon_list.png) repeat scroll -157px -652px;
+                        display: inline-block;
+                        height: 13px;
+                        margin-left: 4px;
+                        vertical-align: middle;
+                        width: 11px;
+                    }
+                }
+            }
+            .t1_d2{
+                float: left;
+                overflow: hidden;
+                input{
+                    vertical-align: middle;
+                    margin: 0;
+                    padding: 0;
+                }
+                label{
+                    padding-left: 4px;
+                    padding-top: 0px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    color: #94193f;
+                }
+            }
+            .t1_d3{
+                float: right;
+                padding-right: 10px;
+                .d3_d1{
+                    color: #999999;
+                    float: left;
+                    padding-right: 38px;
+                    div{
+                        float: left;
+                        padding-right: 10px;
+                        span:nth-of-type(1){
+                            color: #c41f3a;
+                            padding: 0 2px;
+                        }
+                        span:nth-of-type(2){
+                            color: #999;
+                            padding: 0 5px;
+                        }
+                    }
+                    span{
+                        color: #c41f3a;
+                    }
+                }
+                ul{
+                    float: left;
+                    padding-left: 0px;
+                    li{
+                        float: left;
+                        color: #999;
+                        cursor: pointer;
+                        margin-left: 10px;
+                        padding-right: 0px;
+                    }
+                }
+            }
+        }
+        .s_t2{
+            margin-top: 20px;
+            ul{
+                li{
+                    transition: box-shadow 0.7s ease 0s;
+                    border: 1px solid #e4e4e4;
+                    float: left;
+                    margin: 5px 9px 18px 0px;
+                    padding: 0 0 15px;
+                    width: 291px;
+                    height: 360px;
+                    position: relative;
+                    .t2_d1{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 80px;
+                        height: 80px;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .t2_d2{
+                        div:first-child{
+                            a{
+                                display: table-cell;
+                                height: 291px;
+                                overflow: hidden;
+                                text-align: center;
+                                width: 291px;
+                                vertical-align: middle;
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                        }
+                        div:last-child{
+                            padding: 0 15px;
+                            p:first-child{
+                                margin-top: 5px;
+                                overflow: hidden;
+                                span:first-child{
+                                    color: #94193f;
+                                    font-family: 华文细黑;
+                                    font-size: 20px;
+                                    font-weight: bold;
+                                }
+                                span:last-child{
+                                    color: #969696;
+                                    padding-left: 10px;
+                                }
+                            }
+                            p:last-child{
+                                margin-top: 5px;
+                                a{
+                                    font-family: 宋体;
+                                    line-height: 1.4em;
+                                    overflow: hidden;
+                                    display: block;
+                                    color: #434343;
+                                    span{
+                                        color: #f00;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                li:hover{
+                    box-shadow: 0 0 5px #e5e5e5;
+                    border: 1px solid #fff;
+                }
+                li:nth-of-type(4n){
+                    margin-right: 0px;
+                }
+            }
+        }
+        .s_t3{
+            width: 100%;
+            overflow: hidden;
+            margin-top: 20px;
+            text-align: center;
+            .t3_z{
+                display: inline-block;
+                ul{
+                    li{
+                        float: left;
+                        cursor: pointer;
+                        margin-left: 10px;
+                    }
+                    li:nth-of-type(1){
+                            background-color: #fff;
+                            color: #fff;
+                            display: block;
+                            font-size: 18px;
+                            height: 40px;
+                            line-height: 40px;
+                            text-align: center;
+                            width: 80px;
+                            span{
+                                font-family: 宋体;
+                                font-size: 13px;
+                                display: block;
+                                height: 40px;
+                                line-height: 40px;
+                                text-align: center;
+                                border: 1px solid #cccccc;
+                                color: #787878;
+                                width: 80px;
+                                span{
+                                    vertical-align: middle;
+                                    background: url(../imgs/uc_icon_list.png) no-repeat scroll -271px -254px;
+                                    color: #6d6d6d;
+                                    display: inline-block;
+                                    height: 40px;
+                                    width: 8px;
+                                    border: 0px;
+                                }
+                            }
+                    }
+                    li:nth-of-type(2){
+                        color: #93193e;
+                        span{
+                            border: 1px solid #fff;
+                            color: #94193f;
+                            height: 42px;
+                            line-height: 42px;
+                            text-align: center;
+                            width: 40px;
+                        }
+                    }
+                    li:nth-of-type(3){
+                        background-color: #fff;
+                        color: #fff;
+                        display: block;
+                        font-size: 18px;
+                        height: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        width: 80px;
+                        span{
+                            font-family: 宋体;
+                            font-size: 13px;
+                            display: block;
+                            height: 40px;
+                            line-height: 40px;
+                            text-align: center;
+                            border: 1px solid #cccccc;
+                            color: #787878;
+                            width: 80px;
+                            span{
+                                vertical-align: middle;
+                                margin-left: 3px;
+                                background: url(../imgs/uc_icon_list.png) no-repeat scroll -271px -282px;
+                                color: #6d6d6d;
+                                display: inline-block;
+                                height: 40px;
+                                width: 8px;
+                                border: 0px;
+                            }
+                        }
                     }
                 }
             }
