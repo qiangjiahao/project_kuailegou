@@ -15,7 +15,7 @@
 		<div class="header">
 			<div class="h_z">
 				<div class="h_z_left">
-					<a href="#">
+					<a href="index.html">
 						<img src="imgs/logo.jpg"/>
 					</a>
 				</div>
@@ -39,32 +39,31 @@
 							</div>
 						</div>
 						<div class="l_method">
-							<span class="s_radio" >
+							<span class="s_radio" id="s11">
 								<input type="radio" checked name="s_r" id="s_r1"/>
-								<label for="s_r1" id="sp123">快捷登录</label>
+								<label for="s_r1">快捷登录</label>
 							</span>
-							<span class="s_radio">
+							<span class="s_radio" id="s12">
 								<input type="radio" name="s_r" id="s_r2"/>
-								<label for="s_r2" id="sp1231">普通密码登录</label>
+								<label for="s_r2">普通密码登录</label>
 							</span>
 						</div>
 						<div class="l_nr" style="display: block;">
 							<form>
 								<div class="f_div1">
-									<input type="text" placeholder="请输入手机号"/>
+									<input type="text" placeholder="请输入手机号" id="phoneId"/>
 									<div>
-										<div>请输入11位手机号码</div>
+										<div class="userMsg"></div>
 									</div>
 								</div>
 								<div class="f_div2">
-									<input type="text" placeholder="验证码"/>
+									<input type="text" placeholder="验证码" id="dxyzmId"/>
 									<a href="#">
 										<div>获取短信验证码</div>
 									</a>
 									<div>
-										<div>
-											<span></span>
-											您输入的短信验证码有误
+										<div class="userMsg2">
+											<span style="display: none;"></span>
 										</div>
 									</div>
 								</div>
@@ -78,19 +77,20 @@
 								<div class="f_div1">
 									<input type="text" placeholder="请输入手机号" id="username"/>
 									<div>
-										<div>请输入11位手机号码</div>
+										<div class="userMsg3"></div>
 									</div>
 								</div>
 								<div class="f_div1">
 									<input type="password" placeholder="请输入密码" id="userpass"/>
 									<div>
-										<div>请输入您的密码,您的密码可能为字母、数字或符号组合</div>
+										<div class="userMsg4"></div>
 									</div>
 								</div>
 								<div class="f_div3">
-									<input type="password" placeholder="请输入验证码"/>
+									<input type="text" placeholder="请输入验证码" id="Code"/>
+									<input type="button" value="5345" id="btn"/>
 									<div>
-										<div>请输入右侧验证码，不区分大小写</div>
+										<div class="userMsg5"></div>
 									</div>
 								</div>
 								<div class="f_div5">

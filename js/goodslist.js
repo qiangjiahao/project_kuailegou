@@ -1,5 +1,4 @@
 function g_list(){
-
 	$.ajax({
 		type:"get",
 		url:"php/getGoodsList.php",

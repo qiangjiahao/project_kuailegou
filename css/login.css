@@ -156,7 +156,7 @@
             margin-bottom: 3px; }
             .mainbody .m_b_z .m_b_z_r .login .l_nr2 form .f_div1 div div {
               color: #8c8c8c; }
-          .mainbody .m_b_z .m_b_z_r .login .l_nr2 form .f_div3 input {
+          .mainbody .m_b_z .m_b_z_r .login .l_nr2 form .f_div3 input:nth-of-type(1) {
             color: #333333;
             border: 1px solid #c8c8c8;
             height: 25px;
@@ -164,6 +164,12 @@
             padding-left: 6px;
             width: 157px;
             padding: 7px 0 7px 6px; }
+          .mainbody .m_b_z .m_b_z_r .login .l_nr2 form .f_div3 #btn {
+            margin-left: 12px;
+            margin-right: 5px;
+            float: right;
+            width: 100px;
+            height: 38px; }
           .mainbody .m_b_z .m_b_z_r .login .l_nr2 form .f_div3 div {
             height: 23px;
             line-height: 23px;
